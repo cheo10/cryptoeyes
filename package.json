@@ -1,0 +1,29 @@
+{
+  "name": "cryptoeyes",
+  "version": "1.0.0",
+  "description": "crypto portfolio tracker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheo10/cryptoeyes.git"
+  },
+  "author": "chris heo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cheo10/cryptoeyes/issues"
+  },
+  "homepage": "https://github.com/cheo10/cryptoeyes#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "pg": "7.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.6.1"
+  }
+}
