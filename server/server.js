@@ -17,11 +17,6 @@ const client = new Client({
 
 client.connect()
 
-app.get('/', (req, res) => res.send('Hello World!'))
-
-app.listen(port, () => console.log('Example app listening on port 3000!'))
-
-
 nextApp.prepare()
   .then(() => {
 
