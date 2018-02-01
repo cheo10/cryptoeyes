@@ -17,6 +17,9 @@ const client = new Client({
 
 client.connect()
 
+console.log('environment: ', process.env.NODE_ENV)
+console.log('dev var: ', dev)
+console.log('port: ', process.env.PORT)
 nextApp.prepare()
   .then(() => {
 
@@ -30,10 +33,10 @@ nextApp.prepare()
     })
 
     app.listen(port, (err) => {
-      if (err) throw err
-      if (process.env.NODE_ENV !== 'production') console.log(`> Ready on http://localhost:${port}`)
       console.log('environment: ', process.env.NODE_ENV)
       console.log('dev var: ', dev)
       console.log('port: ', process.env.PORT)
+      if (err) throw err
+      if (process.env.NODE_ENV !== 'production') console.log(`> Ready on http://localhost:${port}`)
     })
   })
