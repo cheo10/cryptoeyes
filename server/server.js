@@ -21,7 +21,7 @@ nextApp.prepare()
   .then(() => {
 
     app.get('/', (req, res) => {
-      return app.render(req, res, '/welcome', req.query)
+      return app.render(req, res, '/index', req.query)
     })
 
 
@@ -31,6 +31,6 @@ nextApp.prepare()
 
     app.listen(port, (err) => {
       if (err) throw err
-      console.log(`> Ready on http://localhost:${port}`)
+      if (process.env.NODE_ENV !== 'production') console.log(`> Ready on http://localhost:${port}`)
     })
   })
