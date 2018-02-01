@@ -9,7 +9,7 @@ const client = new Client({
   ssl: true,
 });
 
-client.connect();
+client.connect()
 
 app.get('/', (req, res) => res.send('Hello World!'))
 
