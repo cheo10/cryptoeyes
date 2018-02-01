@@ -6,3 +6,6 @@ node_modules/
 
 # heroku procfile
 procfile
+
+# Next Js
+.next/
