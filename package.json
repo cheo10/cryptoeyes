@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build && npm run startnext",
     "dev": "next",
     "build": "next build",
-    "startnext": "next start"
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "next build"
   },
   "repository": {
     "type": "git",
